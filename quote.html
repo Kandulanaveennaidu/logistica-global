@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a1628">
+<title>Request A Quote | Logistica Global</title>
+<meta name="description" content="Request a quick freight forwarding or customs clearing quote. Fill in your shipment details and receive a competitive rate within 24 hours.">
+<link rel="canonical" href="https://www.logisticaglobal.com/quote.html">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.18/index.min.css">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com" defer></script>
+
+<!-- Shared CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-[#0a1628] focus:px-4 focus:py-2 focus:rounded">Skip to main content</a>
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm" role="navigation" aria-label="Main navigation">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Logistica Global Home">
+        <svg class="w-8 h-8 text-[#f97316]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+        <span class="text-xl font-bold text-[#0a1628]">Logistica<span class="text-[#f97316]">Global</span></span>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-sm font-semibold text-[#0a1628] hover:text-[#f97316] transition-colors">Home</a>
+        <a href="services.html" class="nav-link text-sm font-semibold text-[#0a1628] hover:text-[#f97316] transition-colors">Services</a>
+        <a href="about.html" class="nav-link text-sm font-semibold text-[#0a1628] hover:text-[#f97316] transition-colors">About</a>
+        <a href="industries.html" class="nav-link text-sm font-semibold text-[#0a1628] hover:text-[#f97316] transition-colors">Industries</a>
+        <a href="contact.html" class="nav-link text-sm font-semibold text-[#0a1628] hover:text-[#f97316] transition-colors">Contact</a>
+        <div class="flex items-center gap-3">
+          <a href="quote.html" class="btn-primary text-sm">Request Quote</a>
+        </div>
+      </div>
+      <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-md text-[#0a1628]" aria-label="Open menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-white shadow-2xl z-50 lg:hidden">
+    <div class="p-6">
+      <div class="flex justify-between items-center mb-8">
+        <span class="text-xl font-bold text-[#0a1628]">Menu</span>
+        <button id="closeMobileMenu" class="p-2 rounded-md text-[#0a1628]" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="mobile-link text-base font-semibold text-[#0a1628] py-2 border-b border-gray-100">Home</a>
+        <a href="services.html" class="mobile-link text-base font-semibold text-[#0a1628] py-2 border-b border-gray-100">Services</a>
+        <a href="about.html" class="mobile-link text-base font-semibold text-[#0a1628] py-2 border-b border-gray-100">About</a>
+        <a href="industries.html" class="mobile-link text-base font-semibold text-[#0a1628] py-2 border-b border-gray-100">Industries</a>
+        <a href="contact.html" class="mobile-link text-base font-semibold text-[#0a1628] py-2 border-b border-gray-100">Contact</a>
+        <a href="quote.html" class="btn-primary text-center mt-4">Request Quote</a>
+      </div>
+    </div>
+  </div>
+  <div id="mobileOverlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden"></div>
+</nav>
+
+<main id="main-content" class="pt-16 lg:pt-20">
+
+  <!-- Quote Multi-step Section -->
+  <section class="pt-24 pb-20 lg:py-32 bg-gray-50 min-h-screen">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <span class="text-[#f97316] font-semibold text-sm uppercase tracking-wider">Get Started</span>
+        <h1 class="text-3xl lg:text-5xl font-bold text-[#0a1628] mt-3 mb-4">Request a Freight Quote</h1>
+        <p class="text-gray-600 text-lg">Fill in your shipment details and receive a competitive quote within 24 hours.</p>
+      </div>
+      
+      <!-- Step Indicator -->
+      <div class="step-indicator fade-in">
+        <div class="step-circle active" data-step-num="1">1</div>
+        <div class="step-line"></div>
+        <div class="step-circle" data-step-num="2">2</div>
+        <div class="step-line"></div>
+        <div class="step-circle" data-step-num="3">3</div>
+      </div>
+
+      <form id="freightQuoteForm" class="bg-white rounded-2xl shadow-lg p-6 lg:p-10 fade-in" novalidate>
+        
+        <!-- Step 1: Contact Info -->
+        <div class="form-step active" data-form-step="1">
+          <h2 class="text-xl font-bold text-[#0a1628] mb-6">Contact Information</h2>
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="form-label" for="fq_name">Full Name *</label>
+              <input type="text" id="fq_name" name="name" class="form-input" required placeholder="John Smith">
+            </div>
+            <div>
+              <label class="form-label" for="fq_company">Company Name *</label>
+              <input type="text" id="fq_company" name="company" class="form-input" required placeholder="Your Company">
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="form-label" for="fq_email">Email Address *</label>
+              <input type="email" id="fq_email" name="email" class="form-input" required placeholder="john@company.com">
+            </div>
+            <div>
+              <label class="form-label" for="fq_phone">Phone Number *</label>
+              <input type="tel" id="fq_phone" name="phone" class="form-input" required placeholder="+1 (555) 000-0000">
+            </div>
+          </div>
+          <div class="mb-6">
+            <label class="form-label" for="fq_country">Country *</label>
+            <select id="fq_country" name="country" class="form-input" required>
+              <option value="">Select Country</option>
+              <option value="US">United States</option>
+              <option value="GB">United Kingdom</option>
+              <option value="DE">Germany</option>
+              <option value="CN">China</option>
+              <option value="JP">Japan</option>
+              <option value="IN">India</option>
+              <option value="BR">Brazil</option>
+              <option value="AU">Australia</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <button type="button" class="btn-primary next-step" data-next="2">Next Step →</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Freight Details -->
+        <div class="form-step hidden" data-form-step="2">
+          <h2 class="text-xl font-bold text-[#0a1628] mb-6">Shipment Details</h2>
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="form-label" for="fq_service">Service Required *</label>
+              <select id="fq_service" name="service" class="form-input" required>
+                <option value="">Select Service</option>
+                <option value="air">Air Freight</option>
+                <option value="sea">Sea Freight</option>
+                <option value="road">Road Freight</option>
+                <option value="rail">Rail Freight</option>
+                <option value="customs">Customs Clearing Only</option>
+                <option value="multimodal">Multimodal</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" for="fq_freight_type">Freight Type *</label>
+              <select id="fq_freight_type" name="freight_type" class="form-input" required>
+                <option value="">Select Type</option>
+                <option value="fcl">Full Container Load (FCL)</option>
+                <option value="lcl">Less Container Load (LCL)</option>
+                <option value="bulk">Bulk Cargo</option>
+                <option value="break_bulk">Break Bulk</option>
+                <option value="project">Project Cargo</option>
+                <option value="express">Express</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="form-label" for="fq_origin">Origin *</label>
+              <input type="text" id="fq_origin" name="origin" class="form-input" required placeholder="City, Country or Port/Airport Code">
+            </div>
+            <div>
+              <label class="form-label" for="fq_destination">Destination *</label>
+              <input type="text" id="fq_destination" name="destination" class="form-input" required placeholder="City, Country or Port/Airport Code">
+            </div>
+          </div>
+          <div class="mt-8 flex justify-between">
+            <button type="button" class="btn-secondary prev-step text-[#0a1628] border-[#0a1628]" data-prev="1">← Previous</button>
+            <button type="button" class="btn-primary next-step" data-next="3">Next Step →</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Message & Submit -->
+        <div class="form-step hidden" data-form-step="3">
+          <h2 class="text-xl font-bold text-[#0a1628] mb-6">Additional Information</h2>
+          <div class="mb-6">
+            <label class="form-label" for="fq_message">Message / Special Requirements *</label>
+            <textarea id="fq_message" name="message" class="form-input" rows="5" required placeholder="Describe your cargo, dimensions, weight, special handling requirements (temp control, hazardous materials)..."></textarea>
+          </div>
+          <div class="mb-6">
+            <label class="form-label" for="fq_file">Upload Documents (Optional)</label>
+            <input type="file" id="fq_file" name="file" class="form-input" accept=".pdf,.doc,.docx,.jpg,.png">
+            <p class="text-xs text-gray-500 mt-1">Accepted formats: PDF, DOC, JPG, PNG (Max 10MB)</p>
+          </div>
+          
+          <div class="mt-8 flex justify-between">
+            <button type="button" class="btn-secondary prev-step text-[#0a1628] border-[#0a1628]" data-prev="2">← Previous</button>
+            <button type="submit" class="btn-primary">Submit Quote Request ✓</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#0a1628] text-white pt-16 pb-8 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <!-- About -->
+      <div>
+        <a href="index.html" class="flex items-center gap-2 mb-6" aria-label="Logistica Global Home">
+          <svg class="w-8 h-8 text-[#f97316]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+          </svg>
+          <span class="text-xl font-bold text-white">Logistica<span class="text-[#f97316]">Global</span></span>
+        </a>
+        <p class="text-gray-400 text-sm mb-6">
+          Your trusted worldwide freight forwarding and custom clearing agency. Delivering efficiency, reliability, and precision to your supply chain for 25+ years.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-400 hover:text-[#f97316] transition-colors"><span class="text-lg">📘</span></a>
+          <a href="#" class="text-gray-400 hover:text-[#f97316] transition-colors"><span class="text-lg">🔗</span></a>
+          <a href="#" class="text-gray-400 hover:text-[#f97316] transition-colors"><span class="text-lg">🐦</span></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 border-b border-gray-800 pb-2">Navigation</h4>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-[#f97316] transition-colors">Home</a></li>
+          <li><a href="services.html" class="hover:text-[#f97316] transition-colors">Services</a></li>
+          <li><a href="about.html" class="hover:text-[#f97316] transition-colors">About Us</a></li>
+          <li><a href="industries.html" class="hover:text-[#f97316] transition-colors">Industries Served</a></li>
+          <li><a href="contact.html" class="hover:text-[#f97316] transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Divisions -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 border-b border-gray-800 pb-2">Our Divisions</h4>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li><a href="services.html" class="hover:text-[#f97316] transition-colors">Air Freight Forwarding</a></li>
+          <li><a href="services.html" class="hover:text-[#f97316] transition-colors">Ocean Freight (FCL / LCL)</a></li>
+          <li><a href="services.html" class="hover:text-[#f97316] transition-colors">Land Transport & Trucking</a></li>
+          <li><a href="services.html" class="hover:text-[#f97316] transition-colors">Customs clearance & Duties</a></li>
+          <li><a href="services.html" class="hover:text-[#f97316] transition-colors">Strategic Warehousing</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 border-b border-gray-800 pb-2">Global Headquarters</h4>
+        <p class="text-sm text-gray-400 mb-3">📍 123 Logistics Avenue, Global City, GC 10001, US</p>
+        <p class="text-sm text-gray-400 mb-3">📞 +1-800-LOGISTICS</p>
+        <p class="text-sm text-gray-400 mb-3">✉️ support@logisticaglobal.com</p>
+        <p class="text-sm text-gray-400">🕒 Mon - Fri: 8:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-4">
+      <p>&copy; 2026 Logistica Global. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Service</a>
+        <a href="#" class="hover:text-white">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Shared JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>

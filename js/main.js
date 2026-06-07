@@ -12,10 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (open) {
       mobileMenu.classList.add('open');
       mobileOverlay.classList.remove('hidden');
+      mobileOverlay.classList.add('open');
       mobileMenuBtn.setAttribute('aria-expanded', 'true');
     } else {
       mobileMenu.classList.remove('open');
       mobileOverlay.classList.add('hidden');
+      mobileOverlay.classList.remove('open');
       mobileMenuBtn.setAttribute('aria-expanded', 'false');
     }
   }

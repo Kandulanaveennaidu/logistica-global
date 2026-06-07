@@ -89,6 +89,15 @@
   "priceRange": "$$"
 }
 </script>
+<!-- Prevent Flash of Unstyled Content (FOUC) -->
+<style>
+  body { opacity: 0; transition: opacity 0.25s ease-in-out; }
+</style>
+<noscript>
+  <style>
+    body { opacity: 1 !important; }
+  </style>
+</noscript>
 </head>
 <body>
 

@@ -1,6 +1,9 @@
 // Logistica Global - Shared Script
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Reveal body to prevent Flash of Unstyled Content (FOUC)
+  document.body.style.opacity = '1';
+
   // 1. Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const closeMobileMenu = document.getElementById('closeMobileMenu');
